@@ -2,6 +2,8 @@ import fs from 'node:fs';
 import path from 'node:path';
 import { describe, expect, it } from 'vitest';
 
+import profile from '@/data/profile.json';
+import work from '@/data/resume/work';
 import type { Post } from '@/lib/posts';
 import {
   BLOG_ID,
@@ -31,11 +33,30 @@ const START_OF_FRAME_MARKERS = new Set([
   0xc0, 0xc1, 0xc2, 0xc3, 0xc5, 0xc6, 0xc7, 0xc9, 0xca, 0xcb, 0xcd, 0xce, 0xcf,
 ]);
 
-function readJpegDimensions(filePath: string) {
+function readImageDimensions(filePath: string) {
   const buffer = fs.readFileSync(filePath);
 
+  // Check for PNG signature
+  if (
+    buffer[0] === 0x89 &&
+    buffer[1] === 0x50 &&
+    buffer[2] === 0x4e &&
+    buffer[3] === 0x47 &&
+    buffer[4] === 0x0d &&
+    buffer[5] === 0x0a &&
+    buffer[6] === 0x1a &&
+    buffer[7] === 0x0a
+  ) {
+    // PNG: Width at bytes 16-19, Height at bytes 20-23
+    return {
+      width: buffer.readUInt32BE(16),
+      height: buffer.readUInt32BE(20),
+    };
+  }
+
+  // Assume JPEG if not PNG
   if (buffer[0] !== 0xff || buffer[1] !== 0xd8) {
-    throw new Error(`Expected a JPEG file at ${filePath}`);
+    throw new Error(`Expected a JPEG or PNG file at ${filePath}`);
   }
 
   let offset = 2;
@@ -72,7 +93,7 @@ function readJpegDimensions(filePath: string) {
     offset += length;
   }
 
-  throw new Error(`Could not find JPEG dimensions for ${filePath}`);
+  throw new Error(`Could not find image dimensions for ${filePath}`);
 }
 
 const mockPost: Post = {
@@ -93,8 +114,8 @@ describe('personNode', () => {
   it('uses author name and split given/family names', () => {
     const node = personNode();
     expect(node.name).toBe(AUTHOR_NAME);
-    expect(node.givenName).toBe('Michael');
-    expect(node.familyName).toBe("D'Angelo");
+    expect(node.givenName).toBe(profile.name.split(' ')[0]);
+    expect(node.familyName).toBe(profile.name.split(' ')[1]);
   });
 
   it('exposes an ImageObject and social sameAs links', () => {
@@ -112,7 +133,7 @@ describe('personNode', () => {
     const node = personNode();
     const worksFor = node.worksFor as Record<string, unknown>;
     expect(worksFor['@type']).toBe('Organization');
-    expect(worksFor.name).toBe('OpenAI');
+    expect(worksFor.name).toBe(work[0].name);
     const alumniOf = node.alumniOf as Record<string, unknown>[];
     expect(alumniOf[0]['@type']).toBe('CollegeOrUniversity');
   });
@@ -268,6 +289,6 @@ describe('site image metadata', () => {
       SITE_IMAGE_PATH.replace(/^\//, ''),
     );
 
-    expect(SITE_IMAGE_DIMENSIONS).toEqual(readJpegDimensions(imagePath));
+    expect(SITE_IMAGE_DIMENSIONS).toEqual(readImageDimensions(imagePath));
   });
 });

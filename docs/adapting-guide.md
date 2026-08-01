@@ -11,7 +11,7 @@ dependencies, and start the development server. To set up the fork manually,
 run:
 
 ```bash
-git clone https://github.com/YOUR-USER/personal-site.git
+git clone https://github.com/YOUR-USER/henrymatar.github.io.git
 cd personal-site
 nvm install
 npm ci
@@ -210,7 +210,7 @@ claim. This search covers the current name, domain, handle, employer, and
 repository:
 
 ```bash
-rg -n -i "Michael|mldangelo|dangelosaurus|mldangelo\\.com|OpenAI|Promptfoo" \
+rg -n -i "Michael|henrymatar|henrymatar\.github\.io|OpenAI|Promptfoo" \
   app content public scripts src package.json README.md
 ```
 
@@ -298,5 +298,5 @@ assets and absolute URL construction.
 
 ## Getting help
 
-Open an [issue](https://github.com/mldangelo/personal-site/issues) when the
+Open an [issue](https://github.com/henrymatar/henrymatar.github.io/issues) when the
 instructions are unclear or appear to be wrong.

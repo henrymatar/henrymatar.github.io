@@ -1,6 +1,9 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
+import profile from '@/data/profile.json';
+import work from '@/data/resume/work';
+import { AUTHOR_NAME } from '@/lib/utils';
 import Hero from '../../Template/Hero';
 
 describe('Hero', () => {
@@ -15,31 +18,20 @@ describe('Hero', () => {
     render(<Hero />);
 
     const heading = screen.getByRole('heading', { level: 1 });
-    expect(heading).toHaveTextContent("Michael D'Angelo");
+    expect(heading).toHaveTextContent(AUTHOR_NAME);
   });
 
-  it('describes the current work and Promptfoo joining OpenAI', () => {
+  it('describes the current work and employer', () => {
     const { container } = render(<Hero />);
 
-    const openAiLink = screen.getByRole('link', { name: /openai/i });
-    expect(openAiLink).toHaveAttribute('href', 'https://openai.com');
-    expect(openAiLink).toHaveClass('hero-highlight');
-
-    const promptfooLink = screen.getByRole('link', { name: /promptfoo/i });
-    expect(promptfooLink).toHaveAttribute('href', 'https://promptfoo.dev');
-    expect(promptfooLink).toHaveClass('hero-highlight');
-
-    const codexSecurityLink = screen.getByRole('link', {
-      name: 'Codex Security',
+    const employerLink = screen.getByRole('link', {
+      name: new RegExp(work[0].name, 'i'),
     });
-    expect(codexSecurityLink).toHaveAttribute(
-      'href',
-      'https://openai.com/index/codex-security-now-in-research-preview/',
-    );
-    expect(codexSecurityLink).toHaveClass('hero-highlight');
+    expect(employerLink).toHaveAttribute('href', work[0].url);
+    expect(employerLink).toHaveClass('hero-highlight');
 
     expect(container.querySelector('.hero-tagline')).toHaveTextContent(
-      "I'm a Member of the Technical Staff at OpenAI, working on Promptfoo and Codex Security. I help secure AI systems and use AI to find software vulnerabilities. I co-founded Promptfoo before it joined OpenAI in 2026.",
+      `I'm an Electrical Engineering student at CU Boulder, currently a ${profile.role} at ${profile.employer}, focused on hardware/PCB design and embedded systems. Previously a Corporate Strategy Intern at LCRA.`,
     );
   });
 

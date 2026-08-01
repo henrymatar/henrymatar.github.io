@@ -12,10 +12,10 @@ export const TWITTER_HANDLE = ''; // PLACEHOLDER - add your handle (e.g. '@henry
  * The portrait. Used for JSON-LD `image`, where the value should be a picture
  * of the person, not a designed card.
  */
-export const SITE_IMAGE_PATH = 'Headshot_temp.png';
+export const SITE_IMAGE_PATH = '/images/me.jpg';
 export const SITE_IMAGE_DIMENSIONS = {
-  width: 1024,
-  height: 1024,
+  width: 484,
+  height: 628,
 } as const;
 
 /**

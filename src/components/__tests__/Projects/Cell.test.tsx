@@ -69,10 +69,7 @@ describe('Cell', () => {
 
     expect(projectLink).toHaveAttribute('href', mockProject.link);
     expect(reportLinks).toHaveLength(2);
-    expect(reportLinks[0]).toHaveAttribute(
-      'href',
-      '/reports/test-project.pdf',
-    );
+    expect(reportLinks[0]).toHaveAttribute('href', '/reports/test-project.pdf');
     expect(reportLinks[0]).toHaveAttribute('target', '_blank');
     expect(reportLinks[1]).toHaveTextContent('View report');
     expect(projectLink).not.toContainElement(reportLinks[0]);

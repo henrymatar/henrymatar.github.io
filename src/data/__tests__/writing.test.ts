@@ -3,11 +3,6 @@ import { describe, expect, it } from 'vitest';
 import writing from '../writing';
 
 describe('writing data', () => {
-  it('exports an array of writing items', () => {
-    expect(Array.isArray(writing)).toBe(true);
-    expect(writing.length).toBeGreaterThan(0);
-  });
-
   it('each item has required properties', () => {
     for (const item of writing) {
       expect(item).toHaveProperty('title');

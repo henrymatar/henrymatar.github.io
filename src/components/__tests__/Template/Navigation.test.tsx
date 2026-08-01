@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
+import { AUTHOR_NAME } from '@/lib/utils';
 import Navigation from '../../Template/Navigation';
 
 // Mock usePathname to control active state
@@ -32,7 +33,7 @@ describe('Navigation', () => {
   it('renders the logo link to home', () => {
     render(<Navigation />);
     const logo = screen.getByRole('link', {
-      name: /michael d'angelo.*home/i,
+      name: new RegExp(`${AUTHOR_NAME.toLowerCase()}.*home`, 'i'),
     });
     expect(logo).toHaveAttribute('href', '/');
   });
