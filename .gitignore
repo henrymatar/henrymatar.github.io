@@ -53,3 +53,13 @@ Thumbs.db
 .grunt/
 .lock-wscript
 nohup.out
+
+# Cryptographic keys and certificates
+*.key
+*.pem
+*.pfx
+*.crt
+*.csr
+id_rsa
+id_dsa
+id_ed25519
