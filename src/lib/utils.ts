@@ -7,7 +7,7 @@ import profile from '@/data/profile.json';
 // Site configuration
 export const SITE_URL = 'https://henrymatar.github.io';
 export const AUTHOR_NAME = profile.name;
-export const TWITTER_HANDLE = ''; // PLACEHOLDER - add your handle (e.g. '@henrymatar') or leave blank if you don't use X/Twitter
+export const TWITTER_HANDLE = '@henrymatar_dev';
 /**
  * The portrait. Used for JSON-LD `image`, where the value should be a picture
  * of the person, not a designed card.
