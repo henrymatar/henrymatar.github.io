@@ -22,62 +22,44 @@ Outside of engineering, I enjoy snowboarding, hiking, playing tennis and piano, 
 - Space.
 - Summer.
 - Books (Making a Goodreads is on my to do list).
-- Tennis
-- Piano
+- Tennis.
+- Piano.
+- Traveling.
+- Hiking.
+- Cooking.
+- My dogs.
+- Sandwiches
+- Surfing
 
 # Travel / Geography
 
 - I am originally from Manhattan, New York. I have since lived in Westport CT, Delray Beach FL, and Boulder CO.
-- I've been to approximately 11 countries, many of which I would like to revisit.
-- In 2016, I visited Canada, Ethiopia, Austria, Germany, Belgium, Ireland, Northern Ireland, Italy, Romania, Sweden, Norway, Svalbard, Panama, Costa Rica, Uganda, Japan, and the UAE, mostly in that order.
-- In 2017, I visited Canada, Japan, Denmark, Germany, Sweden, Estonia, Russia, the Netherlands, Belgium, the UK, Spain, Iceland, France, Switzerland, Ethiopia, and Luxembourg.
-- In 2018, I visited Canada, France, Italy, Israel, and the UK.
-- In 2019, I visited Canada, the UK, France, and Switzerland.
-- In 2020, I traveled barely 20 blocks. I stayed in New York and remodeled an apartment.
-- In 2021, I continued remodeling an apartment.
-- In 2022, I switched jobs and visited the UK, France, Greece, Belgium, Luxembourg, Germany, and Kenya.
-- In 2023, I visited France, the UK, Ireland, and Rwanda.
-- I am an Oregon Trail II enthusiast.
+- I've been to approximately 11 countries (thanks mom and dad), many of which I would like to revisit.
+- In 2016, I visited Canada.
+- In 2017, I visited Antigua & Barbuda and Canada
+- In 2018, I visited the UK
+- In 2019, I visited Mexico and Japan (Favorite Trip).
+- In 2020, I barely left the house and played lots of lacrosse in the backyard
+- In 2021, I visited Maine, staying in the country
+- In 2022, I visited the Mediterranean
+- Let me know where I should go next :)
 
 # Fun Facts
 
-- I am a Dual Citizen of the US and Canada
-- I have a list of thousands of ideas, like creating matching bow ties for cats and humans.
-- I almost always have a sketchbook with me and a [01 Sakura Pigma Micron Pen](https://www.sakuraofamerica.com/product/pigma-micron/).
-- I can't locate every country on a map.
-- I operate a [small angel fund](http://skepticalinvestments.biz/) with terrible returns.
-- I break about 30 traffic laws on a skateboard or [bicycle](https://www.citibikenyc.com/) every single day.
-- I stack-rank coffee shops, restaurants, and every dog I see in New York.
-- I added this page because many people complained that my site was just my resume.
+- I am a Dual Citizen of the US and Canada.
+- I review sandwich shops around Boulder, CO with a friend and maintain a rank
+- I am currently getting secret clearance
+- I have over 20,000 photos in my camera roll
+- I don't eat fish or red meat
+- I added this page so my site was more than just my resume.
 
-# I Dream Of
+# Favorite restaurants
 
-- Inspiring and feeling inspired.
-- Enabling a brighter future for everyone, regardless of political or socioeconomic status.
-- Treating every individual with genuine kindness and respect.
-- Staying curious.
-- Continually improving.
-- You not checking the commit history for earlier drafts of this file.
+- Lindsey's Deli - Boulder, CO
+- Colony Grill - Wesport, CT
+- Deluxe Green Bo - New York, NY
+- Dishoom - London England
+- Gaetanos Deli - Westport, CT
+- Ma and Pa's - Mount Laurel, NJ
 
-# Websites from People I Admire
-
-- [Alex Peysakhovich](http://alexpeys.github.io/)
-- [Chris Lengerich](http://www.chrislengerich.com/)
-- [Chris Saad](https://www.chrissaad.com/)
-- [Duncan Tomlin](http://duncantomlin.com/)
-- [Ed Kearney](https://edkearney.com/)
-- [Gia Jung](http://giajung.com/)
-- [Hawley Moore](http://hawleymoore.com/)
-- [Holman Gao](https://golmansax.com/)
-- [Ian Webster](http://ianww.com/)
-- [Johanna Flato](https://www.johannaflato.com/)
-- [Judy Mou](http://www.judymou.com/)
-- [Judy Suh](https://www.judysuh.com/)
-- [Kristina Monakhova](https://kristinamonakhova.com/)
-- [Noah Trueblood](http://notrueblood.com/)
-- [Ruoxi Wang](http://ruoxiw.com/)
-- [Tom Sachs](https://www.tomsachs.org/)
-- [Will Holley](https://willholley.com/)
-
-If we are friends and you feel like you belong on this list, you're probably right. Submit a PR, or ask me, and I'll add you.
 `;

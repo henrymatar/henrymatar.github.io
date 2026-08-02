@@ -27,12 +27,12 @@ const routes: Route[] = [
     primary: false,
   },
   {
-    label: 'Contact',
-    path: '/contact',
-  },
-  {
     label: 'Projects',
     path: '/projects',
+  },
+  {
+    label: 'Contact',
+    path: '/contact',
   },
 ];
 

@@ -7,12 +7,12 @@ describe('ContactIcons', () => {
   it('renders contact icons', () => {
     render(<ContactIcons />);
 
-    // Check if GitHub link is present
-    const githubLink = screen.getByRole('link', { name: /github/i });
-    expect(githubLink).toBeInTheDocument();
-    expect(githubLink).toHaveAttribute(
+    // Check if LinkedIn link is present
+    const linkedinLink = screen.getByRole('link', { name: /linkedin/i });
+    expect(linkedinLink).toBeInTheDocument();
+    expect(linkedinLink).toHaveAttribute(
       'href',
-      expect.stringContaining('github.com'),
+      expect.stringContaining('linkedin.com'),
     );
 
     // Check if email link is present
@@ -27,7 +27,7 @@ describe('ContactIcons', () => {
   it('has correct number of contact links', () => {
     render(<ContactIcons />);
     const links = screen.getAllByRole('link');
-    expect(links.length).toBeGreaterThan(0);
+    expect(links.length).toBe(2);
   });
 
   it('can omit email when the page already has a primary email action', () => {
@@ -36,6 +36,6 @@ describe('ContactIcons', () => {
     expect(
       screen.queryByRole('link', { name: /email/i }),
     ).not.toBeInTheDocument();
-    expect(screen.getByRole('link', { name: /github/i })).toBeInTheDocument();
+    expect(screen.getByRole('link', { name: /linkedin/i })).toBeInTheDocument();
   });
 });

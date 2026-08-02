@@ -36,22 +36,8 @@ describe('about data', () => {
     expect(aboutMarkdown).toContain('# Fun Facts');
   });
 
-  it('contains the dreams section', () => {
-    expect(aboutMarkdown).toContain('# I Dream Of');
-    expect(aboutMarkdown).toContain('Staying curious');
-  });
-
-  it('contains the admired websites section', () => {
-    expect(aboutMarkdown).toContain('# Websites from People I Admire');
-  });
-
-  it('contains valid markdown links', () => {
-    // Check for markdown link format [text](url)
-    const linkRegex = /\[.+?\]\(.+?\)/g;
-    const links = aboutMarkdown.match(linkRegex);
-
-    expect(links).not.toBeNull();
-    expect(links!.length).toBeGreaterThan(10);
+  it('contains the favorite restaurants section', () => {
+    expect(aboutMarkdown).toContain('# Favorite restaurants');
   });
 
   it('contains properly formatted headers', () => {
