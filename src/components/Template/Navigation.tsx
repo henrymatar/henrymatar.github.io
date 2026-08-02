@@ -31,6 +31,7 @@ export default function Navigation() {
                 href={l.path}
                 className={`nav-link ${active ? 'active' : ''}`}
                 aria-current={active ? 'page' : undefined}
+                replace
               >
                 {l.label}
               </Link>

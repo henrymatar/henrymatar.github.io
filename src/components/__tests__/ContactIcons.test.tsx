@@ -15,7 +15,6 @@ describe('ContactIcons', () => {
       expect.stringContaining('linkedin.com'),
     );
 
-    //
     // Check if email link is present
     const emailLink = screen.getByRole('link', { name: /email/i });
     expect(emailLink).toBeInTheDocument();
