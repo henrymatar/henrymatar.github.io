@@ -67,7 +67,10 @@ const data: Project[] = [
     categories: ['Embedded Systems'],
     featured: true,
     links: [
-      { label: 'GitHub Repo', url: 'https://github.com/henrymatar/Embedded-STM32-Blackjack-Game' },
+      {
+        label: 'GitHub Repo',
+        url: 'https://github.com/henrymatar/Embedded-STM32-Blackjack-Game',
+      },
       { label: 'Demo Video', url: 'PLACEHOLDER - add your YouTube link here' },
     ],
   },
@@ -92,7 +95,10 @@ const data: Project[] = [
       { label: 'Milestone 3', url: '/reports/edl-report-3.pdf' },
       { label: 'Milestone 4', url: '/reports/edl-report-4.pdf' },
       { label: 'Milestone 5', url: '/reports/edl-report-5.pdf' },
-      { label: 'Final Presentation', url: '/reports/edl-robot-presentation.pdf' },
+      {
+        label: 'Final Presentation',
+        url: '/reports/edl-robot-presentation.pdf',
+      },
     ],
   },
   {
@@ -108,9 +114,7 @@ const data: Project[] = [
     tech: ['Arduino', 'RF/IR Communication'],
     categories: ['Embedded Systems'],
     featured: true,
-    links: [
-      { label: 'Report (PDF)', url: '/reports/rf-ir-robot-report.pdf' },
-    ],
+    links: [{ label: 'Report (PDF)', url: '/reports/rf-ir-robot-report.pdf' }],
   },
   {
     title: 'Astable Multivibrator 555 Timer Board',
@@ -119,15 +123,13 @@ const data: Project[] = [
     desc: '555 timer PCB outputting a 500Hz, 50% duty cycle signal, driving LEDs across a range of load resistances.',
     bullets: [
       'Designed a board powered by a 5V AC-to-DC charger, built around a 555 timer configured for a 500Hz, 50% duty cycle output',
-      'Drove 4 LEDs with series resistances from 50 to 10k Ohms to test the timer\'s current-sourcing limits',
+      "Drove 4 LEDs with series resistances from 50 to 10k Ohms to test the timer's current-sourcing limits",
       'Included test points and isolation switches to measure the 5V input rail, 555 output voltage, and LED current',
     ],
     tech: ['Altium', '555 Timer'],
     categories: ['PCB Design'],
     featured: false,
-    links: [
-      { label: 'Report (PDF)', url: '/reports/555-timer-report.pdf' },
-    ],
+    links: [{ label: 'Report (PDF)', url: '/reports/555-timer-report.pdf' }],
   },
   {
     title: 'Hex Inverter Switching Noise: Good vs. Bad Layout',
@@ -159,7 +161,10 @@ const data: Project[] = [
     categories: ['PCB Design'],
     featured: false,
     links: [
-      { label: 'Presentation (PDF)', url: '/reports/trace-fatigue-presentation.pdf' },
+      {
+        label: 'Presentation (PDF)',
+        url: '/reports/trace-fatigue-presentation.pdf',
+      },
     ],
   },
   {
@@ -169,14 +174,17 @@ const data: Project[] = [
     desc: 'Measured switching inrush current through a circuit using a sense resistor and oscilloscope math functions.',
     bullets: [
       'Used a 2.2 Ohm sense resistor to measure total current through the circuit',
-      'Used the oscilloscope\'s math function to calculate the differential voltage across the sense resistor',
+      "Used the oscilloscope's math function to calculate the differential voltage across the sense resistor",
       'Drove current with a 555 timer to observe and measure switching current behavior',
     ],
     tech: ['Oscilloscope', '555 Timer'],
     categories: ['PCB Design', 'Power Electronics'],
     featured: false,
     links: [
-      { label: 'Presentation (PDF)', url: '/reports/inrush-current-presentation.pdf' },
+      {
+        label: 'Presentation (PDF)',
+        url: '/reports/inrush-current-presentation.pdf',
+      },
     ],
   },
   {
@@ -210,7 +218,10 @@ const data: Project[] = [
     featured: false,
     links: [
       { label: 'Report (PDF)', url: '/reports/induction-motor-report.pdf' },
-      { label: 'Presentation (PDF)', url: '/reports/induction-motor-presentation.pdf' },
+      {
+        label: 'Presentation (PDF)',
+        url: '/reports/induction-motor-presentation.pdf',
+      },
     ],
   },
   {
@@ -227,7 +238,10 @@ const data: Project[] = [
     categories: ['Applied Math', 'Data & Analytics'],
     featured: false,
     links: [
-      { label: 'Report (PDF)', url: '/reports/markov-chain-rankings-report.pdf' },
+      {
+        label: 'Report (PDF)',
+        url: '/reports/markov-chain-rankings-report.pdf',
+      },
     ],
   },
 ];

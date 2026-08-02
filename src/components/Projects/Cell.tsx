@@ -62,7 +62,11 @@ export default function Cell({ data }: CellProps) {
       className={`project-card ${featured ? 'project-card--featured' : ''} ${hasLinks ? 'project-card--linked' : 'project-card--static'}`}
     >
       {hasLinks ? (
-        <a href={links![0].url} className="project-card-link" aria-label={title}>
+        <a
+          href={links![0].url}
+          className="project-card-link"
+          aria-label={title}
+        >
           {cardContent}
         </a>
       ) : (
