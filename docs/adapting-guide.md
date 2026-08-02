@@ -27,20 +27,6 @@ Use the full rebrand prompt in the
 [README](../README.md#adapt-it-with-a-coding-agent) for a first pass. For a
 smaller change, copy one of these.
 
-### Manage writing
-
-```text
-Read AGENTS.md and work on a topic branch. Do not commit, push, merge, or change
-account settings unless I explicitly authorize it.
-Manage writing for this site as follows: [ADD, UPDATE, OR REMOVE CONTENT].
-Use content/writing/ for local posts and src/data/writing.ts for external
-links. Preserve draft isolation, RSS, the homepage writing section, metadata,
-and valid post slugs. Pair each frontmatter `image` with `imageAlt`, and give
-Markdown images descriptive alt text. Keep at least one published post unless I
-asked you to remove writing completely. Run the full validation suite and
-report unresolved content decisions or validation failures.
-```
-
 ### Remove a page or feature
 
 ```text
@@ -113,7 +99,6 @@ Identity data starts in shared files, but some text and links are hard-coded.
 | Portrait and its alt text                                      | `public/images/me.jpg`, `src/components/Template/ThemePortrait.tsx` |
 | Favicon files and web app name                                 | `public/images/favicon/`                                            |
 | Sitemap URL for crawlers                                       | `public/robots.txt`                                                 |
-| RSS title and description                                      | `app/feed.xml/route.ts`                                             |
 | Repository statistics and GitHub API URL                       | `src/components/Stats/Site.tsx`, `src/data/stats/site.ts`           |
 | Countries map                                                  | `src/data/stats/personal.tsx`                                       |
 
@@ -135,52 +120,6 @@ the `page.tsx` files under `app/`. Structured data is assembled in
 
 The current role appears in the profile, homepage, résumé, and page metadata.
 Update those together.
-
-### Writing
-
-Writing comes from two places:
-
-- Markdown posts in `content/writing/`
-- External articles in `src/data/writing.ts`
-
-Both sources appear on `/writing/`. Dated entries can also appear on the
-homepage and in the RSS feed.
-
-Local posts are Markdown files. The filename becomes the URL slug, so
-`my-post.md` becomes `/writing/my-post/`. Valid filenames use lowercase letters
-and numbers separated by single hyphens.
-
-```markdown
----
-title: 'Your Post Title'
-date: '2026-01-15'
-description: 'A short description for previews and search results.'
----
-
-Your content here.
-```
-
-The required fields are `title`, `date`, and `description`. `draft: true` shows
-a post during development without including it in the production export. An
-optional `image` must be a root-relative path under `public/` and must be paired
-with `imageAlt`.
-
-The production export requires at least one published post. It cannot build the
-dynamic post route when `generateStaticParams()` has no published slugs.
-
-Removing the Writing link from `src/data/routes.ts` only hides it from
-navigation. The homepage still promotes writing, and the routes remain
-available by URL.
-
-Full removal requires a consumer search before any files are deleted:
-
-```bash
-rg -n -i "writing|feed\\.xml|getWritingItems|getAllPosts" app src scripts
-```
-
-A complete removal touches the writing routes, feed, content loaders, homepage
-section, sitemap, schema, export verifier, styles, and tests. Run a production
-build after the refactor.
 
 ### Visual identity
 
@@ -292,7 +231,6 @@ assets and absolute URL construction.
 | `EBADENGINE` warning or install failure | Run `nvm install`, then retry `npm ci`                                                        |
 | Port 3000 is in use                     | Run `npm run dev -- -p 3001`                                                                  |
 | Images do not appear                    | Use a URL such as `/images/photo.jpg`, not `public/images/photo.jpg`                          |
-| `missing "generateStaticParams()"`      | Keep at least one published Markdown post                                                     |
 | Assets return 404 on a project site     | Review the repository subpath limitation in the [deployment reference](#deployment-reference) |
 | The export verifier fails               | Run `npm run build` first, then inspect the named file or route                               |
 

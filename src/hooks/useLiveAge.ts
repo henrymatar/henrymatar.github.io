@@ -24,7 +24,7 @@ import usePrefersReducedMotion from './usePrefersReducedMotion';
  *
  * Because the placeholder React renders never changes between renders, React
  * leaves the text node alone on re-render and the live value survives. This is
- * the same arrangement `ReadingProgress` uses for scroll position.
+ * the same arrangement a scroll-progress indicator would use for scroll position.
  *
  * Two other things keep this from being wasteful or unpleasant:
  *

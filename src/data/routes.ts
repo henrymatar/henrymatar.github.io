@@ -22,10 +22,6 @@ const routes: Route[] = [
     path: '/resume',
   },
   {
-    label: 'Writing',
-    path: '/writing',
-  },
-  {
     label: 'Stats',
     path: '/stats',
     primary: false,

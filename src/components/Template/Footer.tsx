@@ -36,7 +36,7 @@ export default function Footer() {
 
         <div className="footer-right">
           {/* Driven from the same route registry as the header, which had
-              drifted: the footer was missing Writing and Stats entirely.
+              drifted: the footer was missing Stats entirely.
               These are group labels, not document sections, so they are
               spans rather than headings. */}
           <nav className="footer-links" aria-labelledby="footer-links-heading">

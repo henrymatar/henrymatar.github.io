@@ -6,7 +6,7 @@
 [![GitHub Forks](https://img.shields.io/github/forks/henrymatar/henrymatar.github.io?style=social)](https://github.com/henrymatar/henrymatar.github.io/network/members)
 
 The source for [henrymatar.github.io](https://henrymatar.github.io), a portfolio, résumé,
-project archive, and writing site built with
+and project archive built with
 [Next.js](https://nextjs.org/), [React](https://react.dev/),
 [TypeScript](https://www.typescriptlang.org/), and
 [Tailwind CSS](https://tailwindcss.com/).
@@ -20,7 +20,6 @@ are personal, so a fork needs a full rebrand.
 
 - A statically exported Next.js 16 site deployed to GitHub Pages.
 - A responsive light/dark design system built from semantic CSS tokens.
-- Markdown writing with drafts, RSS, and page metadata.
 - A filterable résumé that still prints in full.
 - Tests for components, content, metadata, and the final static export.
 
@@ -75,7 +74,7 @@ details, links, images, and intended site URL. Try:
 Read AGENTS.md and docs/adapting-guide.md, set up the repository, then rebrand
 this fork for [NAME] with the details and assets I provide. Work on a topic
 branch and preserve the current routes and design unless I say otherwise.
-Inventory the existing posts, external writing, résumé, and projects before
+Inventory the existing résumé and projects before
 changing the shared identity. Do not relabel that content as mine. Ask whether
 unmatched personal content should keep its original attribution, be replaced,
 or be removed. Use the guide's reference map to update every identity surface
@@ -85,7 +84,7 @@ secrets, or modify DNS. Report the external steps that remain.
 ```
 
 The **[adapting guide](./docs/adapting-guide.md)** has focused prompts for
-writing, feature removal, visual changes, and deployment, plus a map of the
+feature removal, visual changes, and deployment, plus a map of the
 files an agent should inspect.
 
 ## Commands

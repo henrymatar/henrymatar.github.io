@@ -4,9 +4,9 @@ import { isActiveRoute } from '../routes';
 
 describe('isActiveRoute', () => {
   it('matches exact routes and nested routes', () => {
-    expect(isActiveRoute('/writing', '/writing')).toBe(true);
-    expect(isActiveRoute('/writing/', '/writing')).toBe(true);
-    expect(isActiveRoute('/writing/post-slug', '/writing')).toBe(true);
+    expect(isActiveRoute('/resume', '/resume')).toBe(true);
+    expect(isActiveRoute('/resume/', '/resume')).toBe(true);
+    expect(isActiveRoute('/resume/skills', '/resume')).toBe(true);
   });
 
   it('does not match a route-name prefix', () => {
