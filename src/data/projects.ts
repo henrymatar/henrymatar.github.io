@@ -69,9 +69,9 @@ const data: Project[] = [
     links: [
       {
         label: 'GitHub Repo',
-        url: 'https://github.com/henrymatar/Embedded-STM32-Blackjack-Game',
+        url: 'https://github.com/henrymatar/Embedded-STM32-Blackjack-Game/tree/main',
       },
-      { label: 'Demo Video', url: 'PLACEHOLDER - add your YouTube link here' },
+      { label: 'Demo Video', url: 'https://www.youtube.com/shorts/6FZ1xUJ5GN0' },
     ],
   },
   {
