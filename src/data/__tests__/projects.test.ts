@@ -5,18 +5,16 @@ import projects from '../projects';
 describe('projects data', () => {
   it('exports an array of projects', () => {
     expect(Array.isArray(projects)).toBe(true);
-    expect(projects.length).toBe(0);
+    expect(projects.length).toBeGreaterThan(0);
   });
 
   it('each project has required properties', () => {
     for (const project of projects) {
       expect(project).toHaveProperty('title');
-      expect(project).toHaveProperty('image');
       expect(project).toHaveProperty('date');
       expect(project).toHaveProperty('desc');
 
       expect(typeof project.title).toBe('string');
-      expect(typeof project.image).toBe('string');
       expect(typeof project.date).toBe('string');
       expect(typeof project.desc).toBe('string');
     }
@@ -34,9 +32,11 @@ describe('projects data', () => {
     }
   });
 
-  it('image paths start with /', () => {
+  it('image paths start with / when present', () => {
     for (const project of projects) {
-      expect(project.image.startsWith('/')).toBe(true);
+      if (project.image) {
+        expect(project.image.startsWith('/')).toBe(true);
+      }
     }
   });
 
@@ -47,25 +47,19 @@ describe('projects data', () => {
     }
   });
 
-  it('links are valid URLs when present', () => {
-    const urlRegex = /^https?:\/\/.+/;
-
+  it('links are valid when present', () => {
     for (const project of projects) {
-      if (project.link) {
-        expect(project.link).toMatch(urlRegex);
-      }
-    }
-  });
+      if (project.links) {
+        expect(Array.isArray(project.links)).toBe(true);
+        expect(project.links.length).toBeGreaterThan(0);
 
-  it('report hrefs start with / when present', () => {
-    for (const project of projects) {
-      if (project.reports) {
-        expect(Array.isArray(project.reports)).toBe(true);
-        expect(project.reports.length).toBeGreaterThan(0);
-
-        for (const report of project.reports) {
-          expect(report.href.startsWith('/')).toBe(true);
-          expect(report.href.trim().length).toBeGreaterThan(0);
+        for (const link of project.links) {
+          expect(link).toHaveProperty('label');
+          expect(link).toHaveProperty('url');
+          expect(typeof link.label).toBe('string');
+          expect(typeof link.url).toBe('string');
+          expect(link.label.trim().length).toBeGreaterThan(0);
+          expect(link.url.trim().length).toBeGreaterThan(0);
         }
       }
     }

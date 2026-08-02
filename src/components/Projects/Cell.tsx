@@ -9,28 +9,28 @@ interface CellProps {
 }
 
 export default function Cell({ data }: CellProps) {
-  const { title, subtitle, link, image, date, desc, tech, featured, reports } =
-    data;
+  const { title, subtitle, links, image, date, desc, tech, featured } = data;
 
-  const hasLink = Boolean(link);
-  const hasReports = Boolean(reports?.length);
+  const hasLinks = Boolean(links?.length);
 
   const cardContent = (
     <>
-      <div className="project-card-image">
-        <Image
-          src={image}
-          alt=""
-          width={PROJECT_IMAGE.width}
-          height={PROJECT_IMAGE.height}
-          sizes="(max-width: 600px) 100vw, 50vw"
-        />
-      </div>
+      {image && (
+        <div className="project-card-image">
+          <Image
+            src={image}
+            alt=""
+            width={PROJECT_IMAGE.width}
+            height={PROJECT_IMAGE.height}
+            sizes="(max-width: 600px) 100vw, 50vw"
+          />
+        </div>
+      )}
 
       <div className="project-card-content">
         <header className="project-card-header">
           <h3 className="project-card-title">{title}</h3>
-          {hasLink && (
+          {hasLinks && (
             <span className="project-card-affordance" aria-hidden="true">
               ↗
             </span>
@@ -59,28 +59,28 @@ export default function Cell({ data }: CellProps) {
 
   return (
     <article
-      className={`project-card ${featured ? 'project-card--featured' : ''} ${hasLink ? 'project-card--linked' : 'project-card--static'}`}
+      className={`project-card ${featured ? 'project-card--featured' : ''} ${hasLinks ? 'project-card--linked' : 'project-card--static'}`}
     >
-      {hasLink ? (
-        <a href={link} className="project-card-link" aria-label={title}>
+      {hasLinks ? (
+        <a href={links![0].url} className="project-card-link" aria-label={title}>
           {cardContent}
         </a>
       ) : (
         <div className="project-card-static">{cardContent}</div>
       )}
 
-      {hasReports && (
+      {hasLinks && links!.length > 1 && (
         <div className="project-card-reports">
-          {reports!.map((report) => (
+          {links!.slice(1).map((link) => (
             <a
-              key={report.href}
-              href={report.href}
+              key={link.url}
+              href={link.url}
               className="project-card-report"
               target="_blank"
               rel="noopener noreferrer"
             >
-              {report.label ?? 'View report'}
-              <span className="sr-only"> (PDF, opens in new tab)</span>
+              {link.label || 'View report'}
+              <span className="sr-only"> (opens in new tab)</span>
             </a>
           ))}
         </div>
