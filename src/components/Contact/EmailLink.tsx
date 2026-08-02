@@ -14,8 +14,7 @@ const CONTACT_ADDRESS = profile.email;
 const [CONTACT_LOCAL_PART, CONTACT_DOMAIN] = CONTACT_ADDRESS.split('@');
 
 const messages = [
-  CONTACT_LOCAL_PART
-  //,
+  CONTACT_LOCAL_PART,
   // 'hello',
   // 'hola',
   // 'you-can-email-me-at-literally-anything! Really',
