@@ -10,24 +10,26 @@ describe('about data', () => {
 
   it('contains the intro section', () => {
     expect(aboutMarkdown).toContain('# Intro');
-    expect(aboutMarkdown).toContain('OpenAI');
-    expect(aboutMarkdown).toContain('Promptfoo');
+    expect(aboutMarkdown).toContain('Electrical Engineering');
+    expect(aboutMarkdown).toContain('University of Colorado Boulder');
   });
 
-  it('contains the history section', () => {
-    expect(aboutMarkdown).toContain('# Some History');
-    expect(aboutMarkdown).toContain('MS-DOS');
+  it('contains the reading section', () => {
+    expect(aboutMarkdown).toContain('# Follow my Reading');
+    expect(aboutMarkdown).toContain('**Previously Read:** Red Rising');
+    expect(aboutMarkdown).toContain('**Currently Reading:** Golden Son');
+    expect(aboutMarkdown).toContain('**Reading Next:** Morning Star');
   });
 
   it('contains the likes section', () => {
     expect(aboutMarkdown).toContain('# I Like');
-    expect(aboutMarkdown).toContain('Running');
-    expect(aboutMarkdown).toContain('Skiing');
+    expect(aboutMarkdown).toContain('Snowboarding');
+    expect(aboutMarkdown).toContain('Space');
   });
 
   it('contains the travel section', () => {
     expect(aboutMarkdown).toContain('# Travel / Geography');
-    expect(aboutMarkdown).toContain('Buffalo, New York');
+    expect(aboutMarkdown).toContain('Manhattan, New York');
   });
 
   it('contains the fun facts section', () => {

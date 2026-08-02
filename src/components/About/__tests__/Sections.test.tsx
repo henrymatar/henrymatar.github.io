@@ -111,8 +111,8 @@ Lead paragraph.
       <AboutContent markdown={aboutMarkdown} />,
     );
 
-    expect(html).toContain('href="#some-history"');
-    expect(html).toContain('id="some-history"');
+    expect(html).toContain('href="#follow-my-reading"');
+    expect(html).toContain('id="follow-my-reading"');
     expect(html).toContain('href="#travel-geography"');
     expect(html).toContain('id="travel-geography"');
   });

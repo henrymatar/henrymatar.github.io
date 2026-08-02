@@ -1,48 +1,34 @@
 export const aboutMarkdown = `# Intro
 
-I build products, companies, and teams across AI, security, and infrastructure. Today, I am a Member of the Technical Staff at [OpenAI](https://openai.com), working on [Promptfoo](https://promptfoo.dev) and [Codex Security](https://openai.com/index/codex-security-now-in-research-preview/). I help secure AI systems and use AI to find software vulnerabilities.
+I'm an Electrical Engineering student at the University of Colorado Boulder, pursuing minors in Computer Science and Applied Mathematics and graduating in May 2027 with a 3.98 GPA. I'm passionate about designing both hardware and software, from custom PCBs and analog circuits to the firmware that runs on embedded systems.
 
-I co-founded [Promptfoo](https://promptfoo.dev) before it joined OpenAI in 2026. I also co-founded [Arthena](https://arthena.com) (acquired by Masterworks) and [Matroid](https://matroid.com), led engineering at [Smile ID](https://usesmileid.com), and helped build satellites at [Planet](https://planet.com) and [Planetary Resources](https://en.wikipedia.org/wiki/Planetary_Resources).
+Most recently, I worked as a Systems Engineering Intern at Lockheed Martin, where I contributed to software development supporting real-world systems.
 
-In my spare time, I enjoy investing in people and ideas through a [small venture fund](https://skepticalinvestments.biz), focusing on projects with high social impact. If you think I can be helpful to you or your cause, or if you're interested in collaborating, feel free to get in touch.
+Outside of my internship, I’ve focused on hands-on hardware design through personal and academic projects. I've designed and fabricated custom PCBs in Altium, including a four-layer analog measurement instrument and a board built from the ground up around the ATmega328P microcontroller using signal-integrity best practices. My projects have also involved RF and infrared communication, closed-loop motor control, and interrupt-driven embedded systems. I'm a member of Tau Beta Pi, the national engineering honor society.
 
-# Some History
+Outside of engineering, I enjoy snowboarding, hiking, playing tennis and piano, and spending time with my dogs.
 
-- My parents put a computer in my bedroom in 1993 when I was 3. It was an old Tandy that ran MS-DOS. My favorite games were Street Rod 2, Wolfenstein 3D, and Tom and Jerry. It had a mechanical keyboard and a turbo button. To this day, I still don't know what pressing the turbo button really did.
-- We subscribed to AOL in 1995. I still remember installing it from a floppy disk onto our brand-new Packard Bell. It took years for me to send my first email.
-- In the summer of 1996, my uncle purchased [MegaRace](https://en.wikipedia.org/wiki/MegaRace) from [Media Play](https://en.wikipedia.org/wiki/Media_Play) and installed it on my mom's work computer. I might have endangered her business by using her computer too much.
-- At 7, I discovered the mini-games hidden in Microsoft Office. I also beat Minesweeper on expert for the first time.
-- At 8, my parents bought me a Sony Mavica MVC-FD71 digital camera after I stole their SLR one too many times. It could fit 10 images to a floppy disk at a 0.3MP resolution. I still have it, and it still works. I've been taking photographs ever since, now with a Nikon D750, D800, and occasionally with a Mamiya 6II.
-- At 10, I built my first website with Microsoft FrontPage on our Pentium III [Gateway](https://en.wikipedia.org/wiki/Gateway,_Inc.). My website was terrible.
-- I was 11 when I built my first [Tesla Coil](https://en.wikipedia.org/wiki/Tesla_coil) (without my parents' permission). Over the next few years, I built several more, including one of the first audio modulated coils and one of the first DRSSTCs.
-- When I was 12, I set the all-time high record at my local laser tag facility by reverse engineering the charging station and weapon protocols with a photo-resistor, micro-cassette recorder, and a lot of patience. I was unstoppable.
-- At 13, I went to space camp and fell in love. I went back two more times and promised myself that I'd work in space. I've since helped build three generations of satellites and have contributed to two more.
-- At 14, I was almost expelled for finding a backdoor into my high school's file server and telling everyone but the faculty members about it. Later that year, I figured out how to turn off the internet firewall by editing system registry keys. I anonymously shared my work months later.
-- At 16, I participated in a foreign exchange program in Dortmund, Germany. Since then, I've gone back almost every year.
-- 14 - 17, I played a lot of video games. My favorites included Counter-Strike Source, Command and Conquer 3, Halo 2, and Age of Empires II.
-- At 18, in the summer before college, my friends and I started playing [Muggle Quidditch](<https://en.wikipedia.org/wiki/Quidditch_(sport)>). We went on to start over 8 teams in the [International Quidditch Association](https://en.wikipedia.org/wiki/International_Quidditch_Association), including the [Buffalo Quidditch Society](https://www.facebook.com/buffaloquidditch/). At our height, we were ranked third in the IQA. Although I don't play anymore, you can still see pictures of me holding a broom while wearing a chess camp t-shirt on Facebook.
-- At 19, I took my first graduate course and published my first academic paper.
-- At 20, I co-authored a grant to build a satellite and managed a 60+ person team for the next two years. You can read more about [that project](https://ubnl.space/glados/).
+# Follow my Reading
 
-Ask me in person for other stories that I'm afraid to share with the internet.
+**Previously Read:** Red Rising
+
+**Currently Reading:** Golden Son
+
+**Reading Next:** Morning Star
 
 # I Like
 
-- Running.
-- Skiing.
-- Sailing and the sea.
+- Snowboarding.
 - Space.
 - Summer.
-- [Books](https://www.goodreads.com/mdangelo).
-- Colored pencils ([Faber-Castell Polychromos](https://www.faber-castell.com/products/art-and-graphic/polychromos)).
-- Podcasts ([The Daily](https://www.nytimes.com/column/the-daily), [The Ezra Klein Show](https://www.nytimes.com/column/ezra-klein-podcast), [Planet Money](https://www.npr.org/sections/money/), [Dwarkesh Podcast](https://www.dwarkesh.com/about/), [The a16z Show](https://a16z.com/podcasts/a16z-podcast/), [The MAD Podcast with Matt Turck](https://firstmark.com/community/the-mad-podcast/), [Uncapped with Jack Altman](https://podcasts.apple.com/us/podcast/uncapped-with-jack-altman/id1801867202), [Darknet Diaries](https://darknetdiaries.com/), and others).
-- [Good design](/).
-- [Photography](https://instagram.com/dangelosaurus).
+- Books (Making a Goodreads is on my to do list).
+- Tennis
+- Piano
 
 # Travel / Geography
 
-- I am originally from Buffalo, New York. I have since lived in Palo Alto, Mountain View, San Francisco, Seattle, and New York City.
-- I've been to approximately 50 countries, some of which I have forgotten, many of which I would like to revisit.
+- I am originally from Manhattan, New York. I have since lived in Westport CT, Delray Beach FL, and Boulder CO.
+- I've been to approximately 11 countries, many of which I would like to revisit.
 - In 2016, I visited Canada, Ethiopia, Austria, Germany, Belgium, Ireland, Northern Ireland, Italy, Romania, Sweden, Norway, Svalbard, Panama, Costa Rica, Uganda, Japan, and the UAE, mostly in that order.
 - In 2017, I visited Canada, Japan, Denmark, Germany, Sweden, Estonia, Russia, the Netherlands, Belgium, the UK, Spain, Iceland, France, Switzerland, Ethiopia, and Luxembourg.
 - In 2018, I visited Canada, France, Italy, Israel, and the UK.
@@ -55,6 +41,7 @@ Ask me in person for other stories that I'm afraid to share with the internet.
 
 # Fun Facts
 
+- I am a Dual Citizen of the US and Canada
 - I have a list of thousands of ideas, like creating matching bow ties for cats and humans.
 - I almost always have a sketchbook with me and a [01 Sakura Pigma Micron Pen](https://www.sakuraofamerica.com/product/pigma-micron/).
 - I can't locate every country on a map.

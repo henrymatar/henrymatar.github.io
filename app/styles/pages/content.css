@@ -90,6 +90,16 @@
   color: var(--color-fg-bold);
 }
 
+.about-content h3 {
+  margin: var(--spacing-6) 0 var(--spacing-3);
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.2;
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg-bold);
+}
+
 .about-content .about-section-heading-link {
   display: inline-flex;
   align-items: center;

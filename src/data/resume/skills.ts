@@ -43,7 +43,7 @@ const skills: Skill[] = [
   },
   {
     title: 'Java',
-    competency: 3,
+    competency: 5,
     category: ['Languages'],
   },
   // Hardware Design
@@ -84,7 +84,7 @@ const skills: Skill[] = [
   },
   {
     title: '3D Printing',
-    competency: 4,
+    competency: 3,
     category: ['Hardware Design'],
   },
   {
@@ -131,7 +131,7 @@ const skills: Skill[] = [
   },
   {
     title: 'Linux',
-    competency: 4,
+    competency: 5,
     category: ['Data & Analytics', 'Tools'],
   },
   // Tools
