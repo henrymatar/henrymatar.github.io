@@ -54,6 +54,9 @@ Thumbs.db
 .lock-wscript
 nohup.out
 
+# Local source material (not part of the site)
+Website Projects/
+
 # Cryptographic keys and certificates
 *.key
 *.pem
