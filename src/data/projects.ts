@@ -28,7 +28,13 @@ const data: Project[] = [
       'Bootloaded and characterized the board against a commercial Arduino Uno, achieving 2x faster rise times and 10x lower near-field emissions on the 5V rail',
       'Debugged a solder bridge under the ATmega and resolved a bootloading failure through systematic signal probing',
     ],
-    tech: ['Altium', 'ATmega328P', 'Signal Integrity'],
+    tech: [
+      'Altium',
+      'ATmega328P',
+      'Signal Integrity',
+      'Soldering',
+      'Debugging',
+    ],
     categories: ['PCB Design'],
     featured: true,
     links: [
@@ -46,7 +52,7 @@ const data: Project[] = [
       'Simulated and verified analog subsystems including a MOSFET-driven electronic load, voltage dividers, and sense resistor circuitry in SPICE',
       'Debugged full system bring-up with oscilloscopes and test points, resolving component orientation errors and an ADC footprint mismatch',
     ],
-    tech: ['Altium', 'SPICE', 'I2C', 'Analog Design'],
+    tech: ['Altium', 'I2C', 'Soldering', 'Debugging'],
     categories: ['PCB Design', 'Analog Circuits'],
     featured: true,
     links: [
@@ -63,7 +69,7 @@ const data: Project[] = [
       'Implemented game-state management, hidden dealer card behavior, betting mechanics, and a custom cheat-code detection sequence using timed interrupts',
       'Built a multi-screen embedded UI with home navigation and win/loss states using low-level hardware drivers',
     ],
-    tech: ['STM32', 'C', 'Embedded UI'],
+    tech: ['STM32', 'C', 'Embedded Software'],
     categories: ['Embedded Systems'],
     featured: true,
     links: [
@@ -88,7 +94,14 @@ const data: Project[] = [
       'Engineered a BJT-based H-bridge for bidirectional control from a single supply',
       'Programmed an interrupt-driven position control system using encoder feedback for millimeter positional precision',
     ],
-    tech: ['SPICE', 'Arduino Nano Every', 'Bluetooth (HC-05)'],
+    tech: [
+      'SPICE',
+      'Arduino Nano Every',
+      'Bluetooth',
+      'Analog Circuit Design',
+      'Closed-Loop Control Systems',
+      'Oscilloscopes',
+    ],
     categories: ['Embedded Systems', 'Analog Circuits'],
     featured: true,
     links: [
@@ -114,7 +127,13 @@ const data: Project[] = [
       'Designed PCB schematics integrating Arduino and modular connectors, plus a jammer and low-battery indicator',
       'Programmed microcontroller logic for dual-mode RF/IR control with hardware-based switching',
     ],
-    tech: ['Arduino', 'RF/IR Communication'],
+    tech: [
+      'Arduino',
+      'RF/IR Communication',
+      'CAD',
+      '3D Printing',
+      'PCB Design',
+    ],
     categories: ['Embedded Systems'],
     featured: true,
     links: [{ label: 'Report (PDF)', url: '/reports/rf-ir-robot-report.pdf' }],
@@ -129,7 +148,7 @@ const data: Project[] = [
       "Drove 4 LEDs with series resistances from 50 to 10k Ohms to test the timer's current-sourcing limits",
       'Included test points and isolation switches to measure the 5V input rail, 555 output voltage, and LED current',
     ],
-    tech: ['Altium', '555 Timer'],
+    tech: ['555 Timer', 'Circuit Design'],
     categories: ['PCB Design'],
     featured: false,
     links: [{ label: 'Report (PDF)', url: '/reports/555-timer-report.pdf' }],
@@ -144,7 +163,7 @@ const data: Project[] = [
       'Compared switching noise on an oscilloscope to empirically demonstrate the effect of layout choices on signal integrity',
       'Included a 555 timer clock source and a switchable 5V/3.3V rail via an LDO',
     ],
-    tech: ['Altium', 'Signal Integrity', 'Oscilloscope'],
+    tech: ['Signal Integrity', 'Oscilloscope', 'Circuit Design'],
     categories: ['PCB Design'],
     featured: false,
     links: [
@@ -152,7 +171,7 @@ const data: Project[] = [
     ],
   },
   {
-    title: 'Trace Resistance and Current-Carrying Capacity',
+    title: 'Trace Fatigue',
     slug: 'trace-fatigue',
     date: '2026-05-01',
     desc: 'Compared 2-wire and 4-wire measurement methods to characterize PCB trace resistance and failure limits.',
@@ -160,7 +179,7 @@ const data: Project[] = [
       'Measured PCB trace resistance using both 2-wire and 4-wire (Kelvin) measurement setups',
       'Used the 4-wire method to induce current through the trace and calculate resistance from the voltage drop',
     ],
-    tech: ['PCB Design', 'Measurement'],
+    tech: ['PCB Design', 'Oscilloscope'],
     categories: ['PCB Design'],
     featured: false,
     links: [
@@ -180,7 +199,7 @@ const data: Project[] = [
       "Used the oscilloscope's math function to calculate the differential voltage across the sense resistor",
       'Drove current with a 555 timer to observe and measure switching current behavior',
     ],
-    tech: ['Oscilloscope', '555 Timer'],
+    tech: ['Oscilloscope', 'Debugging'],
     categories: ['PCB Design', 'Power Electronics'],
     featured: false,
     links: [
@@ -200,7 +219,7 @@ const data: Project[] = [
       'Varied decoupling capacitor value (1uF and 1000uF) and placement distance from the IC to observe loop inductance and rail noise effects',
       'Demonstrated the design principle of minimizing loop inductance by placing decoupling capacitors close to the load',
     ],
-    tech: ['Altium', 'Power Integrity'],
+    tech: ['Power Integrity', 'Oscilloscope'],
     categories: ['PCB Design', 'Power Electronics'],
     featured: false,
     links: [
