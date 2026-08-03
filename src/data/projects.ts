@@ -69,7 +69,7 @@ const data: Project[] = [
       'Implemented game-state management, hidden dealer card behavior, betting mechanics, and a custom cheat-code detection sequence using timed interrupts',
       'Built a multi-screen embedded UI with home navigation and win/loss states using low-level hardware drivers',
     ],
-    tech: ['STM32', 'C', 'Embedded Software'],
+    tech: ['STM32', 'C', 'Embedded Software', 'I2C', 'SPI'],
     categories: ['Embedded Systems'],
     featured: true,
     links: [
