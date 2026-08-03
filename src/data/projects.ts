@@ -71,7 +71,10 @@ const data: Project[] = [
         label: 'GitHub Repo',
         url: 'https://github.com/henrymatar/Embedded-STM32-Blackjack-Game/tree/main',
       },
-      { label: 'Demo Video', url: 'https://www.youtube.com/shorts/6FZ1xUJ5GN0' },
+      {
+        label: 'Demo Video',
+        url: 'https://www.youtube.com/shorts/6FZ1xUJ5GN0',
+      },
     ],
   },
   {
