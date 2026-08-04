@@ -19,10 +19,23 @@ interface CardProps {
  * the rest render as static cards until their detail page is rolled out.
  */
 export default function Card({ data }: CardProps) {
-  const { title, subtitle, slug, image, date, desc, categories, featured } =
-    data;
+  const {
+    title,
+    subtitle,
+    slug,
+    image,
+    date,
+    desc,
+    categories,
+    featured,
+    links,
+  } = data;
 
   const hasDetail = PROJECT_DETAIL_SLUGS.has(slug);
+  // Projects without a detail page yet link to their first attachment (e.g.
+  // the report PDF), preserving the original clickable card behaviour.
+  const fallbackHref = hasDetail ? undefined : links?.[0]?.url;
+  const isClickable = Boolean(hasDetail || fallbackHref);
 
   const cardContent = (
     <>
@@ -41,7 +54,7 @@ export default function Card({ data }: CardProps) {
       <div className="project-card-content">
         <header className="project-card-header">
           <h3 className="project-card-title">{title}</h3>
-          {hasDetail && (
+          {isClickable && (
             <span className="project-card-affordance" aria-hidden="true">
               ↗
             </span>
@@ -68,15 +81,20 @@ export default function Card({ data }: CardProps) {
     </>
   );
 
+  const href = hasDetail ? `/projects/${slug}` : fallbackHref;
+
   return (
     <article
-      className={`project-card ${hasDetail ? 'project-card--linked' : 'project-card--static'} ${featured ? 'project-card--featured' : ''}`}
+      className={`project-card ${isClickable ? 'project-card--linked' : 'project-card--static'} ${featured ? 'project-card--featured' : ''}`}
     >
-      {hasDetail ? (
+      {href ? (
         <Link
-          href={`/projects/${slug}`}
+          href={href}
           className="project-card-link"
           aria-label={title}
+          {...(hasDetail
+            ? {}
+            : { target: '_blank', rel: 'noopener noreferrer' })}
         >
           {cardContent}
         </Link>

@@ -274,6 +274,9 @@ const data: Project[] = [
  * statically built page. Add a slug here (and it will be picked up by
  * `generateStaticParams`) to roll a project out.
  */
-export const PROJECT_DETAIL_SLUGS: ReadonlySet<string> = new Set(['edl-robot']);
+export const PROJECT_DETAIL_SLUGS: ReadonlySet<string> = new Set([
+  'edl-robot',
+  'embedded-blackjack',
+]);
 
 export default data;
