@@ -148,7 +148,7 @@ const data: Project[] = [
       "Drove 4 LEDs with series resistances from 50 to 10k Ohms to test the timer's current-sourcing limits",
       'Included test points and isolation switches to measure the 5V input rail, 555 output voltage, and LED current',
     ],
-    tech: ['555 Timer', 'Circuit Design'],
+    tech: ['555 Timer', 'Circuit Design', 'PCB Design'],
     categories: ['PCB Design'],
     featured: false,
     links: [{ label: 'Report (PDF)', url: '/reports/555-timer-report.pdf' }],
@@ -163,7 +163,7 @@ const data: Project[] = [
       'Compared switching noise on an oscilloscope to empirically demonstrate the effect of layout choices on signal integrity',
       'Included a 555 timer clock source and a switchable 5V/3.3V rail via an LDO',
     ],
-    tech: ['Signal Integrity', 'Oscilloscope', 'Circuit Design'],
+    tech: ['Signal Integrity', 'Oscilloscope', 'Circuit Design', 'PCB Design'],
     categories: ['PCB Design'],
     featured: false,
     links: [
@@ -199,7 +199,7 @@ const data: Project[] = [
       "Used the oscilloscope's math function to calculate the differential voltage across the sense resistor",
       'Drove current with a 555 timer to observe and measure switching current behavior',
     ],
-    tech: ['Oscilloscope', 'Debugging'],
+    tech: ['Oscilloscope', 'Debugging', 'PCB Design'],
     categories: ['PCB Design', 'Power Electronics'],
     featured: false,
     links: [
@@ -219,7 +219,7 @@ const data: Project[] = [
       'Varied decoupling capacitor value (1uF and 1000uF) and placement distance from the IC to observe loop inductance and rail noise effects',
       'Demonstrated the design principle of minimizing loop inductance by placing decoupling capacitors close to the load',
     ],
-    tech: ['Power Integrity', 'Oscilloscope'],
+    tech: ['Power Integrity', 'Oscilloscope', 'PCB Design'],
     categories: ['PCB Design', 'Power Electronics'],
     featured: false,
     links: [
