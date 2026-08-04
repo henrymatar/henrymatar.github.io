@@ -77,8 +77,22 @@
   transition: border-color var(--duration-fast) var(--ease-out);
 }
 
+/* Featured projects get an accent border so they stand out from the
+   archive grid. */
+.project-card--featured {
+  border-color: var(--color-accent-underline-strong);
+}
+
+.project-card--featured:hover {
+  border-color: var(--color-accent);
+}
+
 .project-card--linked:hover {
   border-color: var(--color-fg-bold);
+}
+
+.project-card--featured.project-card--linked:hover {
+  border-color: var(--color-accent);
 }
 
 /* Full card link wrapper */

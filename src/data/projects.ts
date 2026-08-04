@@ -268,4 +268,12 @@ const data: Project[] = [
   },
 ];
 
+/**
+ * Slugs that have a generated detail page. The detail route is rolled out
+ * incrementally; only projects listed here get a clickable card link and a
+ * statically built page. Add a slug here (and it will be picked up by
+ * `generateStaticParams`) to roll a project out.
+ */
+export const PROJECT_DETAIL_SLUGS: ReadonlySet<string> = new Set(['edl-robot']);
+
 export default data;

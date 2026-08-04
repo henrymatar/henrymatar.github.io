@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-import Cell from '@/components/Projects/Cell';
+import Card from '@/components/Projects/Card';
 import { SchemaGraph } from '@/components/Schema';
 import PageWrapper from '@/components/Template/PageWrapper';
 import data from '@/data/projects';
@@ -56,7 +56,7 @@ export default function ProjectsPage() {
             <h2 className="projects-section-title">Featured</h2>
             <div className="projects-grid projects-grid--featured">
               {featuredProjects.map((project) => (
-                <Cell data={project} key={project.title} />
+                <Card data={project} key={project.title} />
               ))}
             </div>
           </section>
@@ -67,7 +67,7 @@ export default function ProjectsPage() {
             <h2 className="projects-section-title">More Projects</h2>
             <div className="projects-grid">
               {otherProjects.map((project) => (
-                <Cell data={project} key={project.title} />
+                <Card data={project} key={project.title} />
               ))}
             </div>
           </section>
