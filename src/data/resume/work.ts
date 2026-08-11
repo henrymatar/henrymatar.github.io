@@ -20,6 +20,13 @@ const work: Position[] = [
     endDate: '2026-08-31',
     summary:
       "Systems engineering internship at Lockheed Martin's Mount Laurel, NJ facility.",
+    highlights: [
+      'Automated end-to-end messaging validation by scripting REST API-driven tests against message topics, enabling repeatable integration and L2 testing across team products.',
+      'Developed and integrated a Java/Spring Boot aggregator service with ActiveMQ and Hermes (Node/Angular) over AMQP 1.0, supporting reliable end-to-end message flows.',
+      'Engineered a comprehensive JUnit 5/Mockito test suite for a Spring Boot-based tactical track manager, validating partial state merges and Protobuf-to-POJO translations across Kafka and ActiveMQ transport layers.',
+      "Designed deep-nesting test cases for ECEF coordinates and covariance matrices to prevent null-overwriting of mission-critical track data, using Mockito static mocking and Spring's ReflectionTestUtils to isolate external dependencies.",
+      'Refactored a Spring translation service into a modular architecture (Air, Land, Surface) and replaced an unordered HashMap with a TreeMap for relay tracking, guaranteeing deterministic ordering for IBCS aggregation and Protobuf-based health reports.',
+    ],
   },
   {
     name: 'Lower Colorado River Authority (LCRA)',
