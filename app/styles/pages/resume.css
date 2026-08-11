@@ -72,13 +72,28 @@
   margin-bottom: 2rem;
 }
 
+/* Title and download action sit on one row, wrapping on narrow screens. */
+.resume-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.25rem;
+}
+
 .resume-title {
   font-family: var(--font-display);
   font-size: var(--text-3xl);
   font-weight: var(--font-weight-black);
   letter-spacing: var(--tracking-display);
-  margin-bottom: 1.25rem;
+  margin: 0;
   color: var(--color-fg-bold);
+}
+
+/* The download action is screen chrome; print hides it with the rest. */
+.resume-download {
+  flex-shrink: 0;
 }
 
 .resume-summary {

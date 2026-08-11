@@ -13,7 +13,7 @@ import degrees from '@/data/resume/degrees';
 import { categories, skills } from '@/data/resume/skills';
 import work from '@/data/resume/work';
 import { createPageMetadata } from '@/lib/metadata';
-import { AUTHOR_NAME, SITE_URL } from '@/lib/utils';
+import { AUTHOR_NAME, RESUME_PDF_PATH, SITE_URL } from '@/lib/utils';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Resume',
@@ -26,7 +26,16 @@ export default function ResumePage() {
     <PageWrapper>
       <section className="resume-page">
         <header className="resume-header">
-          <h1 className="resume-title">Resume</h1>
+          <div className="resume-header-row">
+            <h1 className="resume-title">Resume</h1>
+            <a
+              href={RESUME_PDF_PATH}
+              className="button resume-download"
+              download
+            >
+              Download Resume
+            </a>
+          </div>
           <p className="resume-summary">
             Electrical Engineering student at CU Boulder (Class of 2027), with
             minors in Computer Science and Applied Mathematics. Experience as a

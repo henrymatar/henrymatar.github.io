@@ -45,3 +45,9 @@ export const PROJECT_IMAGE = {
 
 // Skill competency
 export const MAX_COMPETENCY = 5;
+
+/**
+ * The downloadable resume PDF, committed to `public/`. Served from the site
+ * root on GitHub Pages (user site, no basePath), so the path is absolute.
+ */
+export const RESUME_PDF_PATH = '/reports/HenryMatar_Resume.pdf';
