@@ -17,7 +17,7 @@ import { AUTHOR_NAME, RESUME_PDF_PATH, SITE_URL } from '@/lib/utils';
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Resume',
-  description: `${AUTHOR_NAME}'s Resume. Electrical Engineering student at CU Boulder, currently a Systems Engineering Intern at Lockheed Martin. Minors in Computer Science and Applied Mathematics.`,
+  description: `${AUTHOR_NAME}'s Resume. Electrical Engineering student at CU Boulder with minors in Computer Science and Applied Mathematics.`,
   path: '/resume/',
 });
 

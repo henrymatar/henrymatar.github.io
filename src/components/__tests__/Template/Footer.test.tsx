@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
-import profile from '@/data/profile.json';
+import work from '@/data/resume/work';
 import { AUTHOR_NAME } from '@/lib/utils';
 import Footer from '../../Template/Footer';
 
@@ -18,7 +18,7 @@ describe('Footer', () => {
 
     expect(screen.getByText(AUTHOR_NAME)).toBeInTheDocument();
     expect(
-      screen.getByText(`${profile.role} at ${profile.employer}`),
+      screen.getByText(`${work[0].position} at ${work[0].name}`),
     ).toBeInTheDocument();
   });
 

@@ -18,12 +18,13 @@ export default function Hero() {
             <a href="https://www.colorado.edu" className="hero-highlight">
               CU Boulder
             </a>
-            , currently a {profile.role} at{' '}
+            , and this past summer I worked as a {profile.role} at{' '}
             <a href="https://www.lockheedmartin.com" className="hero-highlight">
               {profile.employer}
             </a>
-            , focused on hardware/PCB design and embedded systems. Previously a
-            Corporate Strategy Intern at{' '}
+            . I have a Secret clearance and am interested in hardware/PCB
+            design, RF, and embedded systems. Previously, I was a Corporate
+            Strategy Intern at{' '}
             <a href="https://www.lcra.org" className="hero-highlight">
               LCRA
             </a>

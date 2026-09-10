@@ -35,7 +35,7 @@ export const SHARE_IMAGE_DIMENSIONS = {
 
 // Canonical one-line bio, shared across page metadata, OpenGraph, and JSON-LD.
 export const SITE_DESCRIPTION =
-  'Electrical Engineering student at CU Boulder, currently a Systems Engineering Intern at Lockheed Martin. Focused on hardware design, embedded systems, and PCB design.';
+  'Electrical Engineering student at CU Boulder, interested in hardware/PCB design, RF, and embedded systems.';
 
 // Image dimension constants
 export const PROJECT_IMAGE = {
