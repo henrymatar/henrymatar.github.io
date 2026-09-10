@@ -38,10 +38,10 @@ export default function ResumePage() {
           </div>
           <p className="resume-summary">
             Electrical Engineering student at CU Boulder (Class of 2027), with
-            minors in Computer Science and Applied Mathematics. Experience as a
-            Systems Engineering Intern at Lockheed Martin and Corporate Strategy
-            Intern at LCRA. Focused on hardware design, embedded systems, and
-            PCB design.
+            minors in Computer Science and Applied Mathematics. Systems
+            Engineering Intern at Lockheed Martin and Technical Lead for
+            Post-Processing on a BAE Systems / CU Boulder RF radar project.
+            Interested in hardware, RF, embedded systems, and PCB design.
           </p>
           {/* Print-only, but real markup rather than CSS `content`, so it is
               selectable, linkable, and reads from the shared profile. The
