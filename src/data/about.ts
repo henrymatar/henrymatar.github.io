@@ -1,10 +1,12 @@
 export const aboutMarkdown = `# Intro
 
-I'm an Electrical Engineering student at the University of Colorado Boulder, pursuing minors in Computer Science and Applied Mathematics and graduating in May 2027 with a 3.98 GPA. I'm passionate about designing both hardware and software, from custom PCBs and analog circuits to the firmware that runs on embedded systems.
+I'm an Electrical Engineering student at the University of Colorado Boulder, pursuing minors in Computer Science and Applied Mathematics and graduating in May 2027 with a 3.98 GPA. I'm passionate about designing both hardware and software, from custom PCBs and analog circuits to the firmware that runs on embedded systems. I also hold a Secret clearance.
 
 Most recently, I worked as a Systems Engineering Intern at Lockheed Martin, where I contributed to software development supporting real-world systems.
 
-Outside of my internship, I’ve focused on hands-on hardware design through personal and academic projects. I've designed and fabricated custom PCBs in Altium, including a four-layer analog measurement instrument and a board built from the ground up around the ATmega328P microcontroller using signal-integrity best practices. My projects have also involved RF and infrared communication, closed-loop motor control, and interrupt-driven embedded systems. I'm a member of Tau Beta Pi, the national engineering honor society.
+I'm currently working on a BAE Systems / CU Boulder Capstone Design Project, where I serve as the Technical Lead for Post-Processing. Our team is developing a bistatic drone-based RF radar system with 2D imaging, object localization, and scattering characterization.
+
+Outside of my internship and capstone work, I've focused on hands-on hardware design through personal and academic projects. I've designed and fabricated custom PCBs in Altium, including a four-layer analog measurement instrument and a board built from the ground up around the ATmega328P microcontroller using signal-integrity best practices. My projects have also involved RF and infrared communication, closed-loop motor control, and interrupt-driven embedded systems. I'm a member of Tau Beta Pi, the national engineering honor society.
 
 Outside of engineering, I enjoy snowboarding, hiking, playing tennis and piano, and spending time with my dogs.
 
@@ -48,7 +50,6 @@ Outside of engineering, I enjoy snowboarding, hiking, playing tennis and piano, 
 
 - I am a Dual Citizen of the US and Canada.
 - I review sandwich shops around Boulder, CO with a friend and maintain a rank
-- I am currently getting secret clearance
 - I have over 20,000 photos in my camera roll
 - I don't eat fish or red meat
 - I added this page so my site was more than just my resume.

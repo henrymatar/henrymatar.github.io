@@ -13,6 +13,14 @@ export interface Position {
 
 const work: Position[] = [
   {
+    name: 'BAE Systems / CU Boulder Capstone Design Project',
+    position: 'Technical Lead, Post-Processing',
+    url: 'https://www.baesystems.com',
+    startDate: '2026-08-01',
+    summary:
+      'Developing a bistatic drone-based RF radar system with 2D imaging, object localization, and scattering characterization.',
+  },
+  {
     name: 'Lockheed Martin',
     position: 'Systems Engineering Intern',
     url: 'https://www.lockheedmartin.com',

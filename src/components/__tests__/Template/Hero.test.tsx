@@ -2,7 +2,6 @@ import { render, screen } from '@testing-library/react';
 import { describe, expect, it } from 'vitest';
 
 import profile from '@/data/profile.json';
-import work from '@/data/resume/work';
 import { AUTHOR_NAME } from '@/lib/utils';
 import Hero from '../../Template/Hero';
 
@@ -21,17 +20,20 @@ describe('Hero', () => {
     expect(heading).toHaveTextContent(AUTHOR_NAME);
   });
 
-  it('describes the current work and employer', () => {
+  it('describes the studies and most recent internship', () => {
     const { container } = render(<Hero />);
 
     const employerLink = screen.getByRole('link', {
-      name: new RegExp(work[0].name, 'i'),
+      name: profile.employer,
     });
-    expect(employerLink).toHaveAttribute('href', work[0].url);
+    expect(employerLink).toHaveAttribute(
+      'href',
+      'https://www.lockheedmartin.com',
+    );
     expect(employerLink).toHaveClass('hero-highlight');
 
     expect(container.querySelector('.hero-tagline')).toHaveTextContent(
-      `I'm an Electrical Engineering student at CU Boulder, currently a ${profile.role} at ${profile.employer}, focused on hardware/PCB design and embedded systems. Previously a Corporate Strategy Intern at LCRA.`,
+      `I'm an Electrical Engineering student at CU Boulder, and this past summer I worked as a ${profile.role} at ${profile.employer}. I have a Secret clearance and am interested in hardware/PCB design, RF, and embedded systems. Previously, I was a Corporate Strategy Intern at LCRA.`,
     );
   });
 
