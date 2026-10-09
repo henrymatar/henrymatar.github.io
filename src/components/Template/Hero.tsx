@@ -18,17 +18,18 @@ export default function Hero() {
             <a href="https://www.colorado.edu" className="hero-highlight">
               CU Boulder
             </a>
-            , and this past summer I worked as a {profile.role} at{' '}
+            . I&apos;m currently the post-processing technical lead on a{' '}
+            <a href="https://www.baesystems.com" className="hero-highlight">
+              BAE Systems
+            </a>
+            -sponsored capstone building a drone-based bistatic RF radar system
+            for 2D imaging and object localization. This past summer I worked as
+            a {profile.role} at{' '}
             <a href="https://www.lockheedmartin.com" className="hero-highlight">
               {profile.employer}
             </a>
             . I have a Secret clearance and am interested in hardware/PCB
-            design, RF, and embedded systems. Previously, I was a Corporate
-            Strategy Intern at{' '}
-            <a href="https://www.lcra.org" className="hero-highlight">
-              LCRA
-            </a>
-            .
+            design, RF, and embedded systems.
           </p>
 
           <div className="hero-cta">

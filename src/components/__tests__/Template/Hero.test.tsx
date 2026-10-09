@@ -33,7 +33,7 @@ describe('Hero', () => {
     expect(employerLink).toHaveClass('hero-highlight');
 
     expect(container.querySelector('.hero-tagline')).toHaveTextContent(
-      `I'm an Electrical Engineering student at CU Boulder, and this past summer I worked as a ${profile.role} at ${profile.employer}. I have a Secret clearance and am interested in hardware/PCB design, RF, and embedded systems. Previously, I was a Corporate Strategy Intern at LCRA.`,
+      `I'm an Electrical Engineering student at CU Boulder. I'm currently the post-processing technical lead on a BAE Systems-sponsored capstone building a drone-based bistatic RF radar system for 2D imaging and object localization. This past summer I worked as a ${profile.role} at ${profile.employer}. I have a Secret clearance and am interested in hardware/PCB design, RF, and embedded systems.`,
     );
   });
 
